@@ -1,0 +1,7 @@
+@namespace("avrofdb.test")
+protocol Test {
+  record TestRecord {
+    string host;
+    int port;
+  }
+}
