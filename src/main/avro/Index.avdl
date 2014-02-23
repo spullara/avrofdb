@@ -1,0 +1,12 @@
+@namespace("avrofdb")
+protocol Indexing {
+  record Index {
+    string fieldName;
+    boolean unique;
+    boolean caseInSensitive;
+  }
+
+  record Indexes {
+    array<Index> indexes;
+  }
+}

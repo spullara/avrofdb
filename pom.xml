@@ -54,6 +54,13 @@
         <executions>
           <execution>
             <id>schemas</id>
+            <phase>generate-sources</phase>
+            <goals>
+              <goal>idl-protocol</goal>
+            </goals>
+          </execution>
+          <execution>
+            <id>test-schemas</id>
             <phase>generate-test-sources</phase>
             <goals>
               <goal>idl-protocol</goal>
